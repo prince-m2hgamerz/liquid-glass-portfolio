@@ -24,18 +24,52 @@ A modern, interactive, and glassmorphic developer portfolio website. Built with 
 
 ```
 project/
-├── public/
-│   └── ...static assets
-├── src/
-│   ├── assets/        # Images and icons
-│   ├── components/    # Reusable components (Navbar, Footer, etc.)
-│   ├── pages/         # Individual sections like About, Projects, Contact
-│   ├── App.jsx        # Root app file
-│   ├── main.jsx       # Entry point
-│   └── index.css      # Tailwind CSS config
+├── .gitignore
+├── README.md
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── project_tree_here.py
+├── readme.py
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── 3D
+│   │   │   ├── FloatingElements.tsx
+│   │   │   ├── ParticleBackground.tsx
+│   │   │   ├── ProjectModal.tsx
+│   │   │   ├── Real3DBlackHole.tsx
+│   │   │   └── SpaceEnvironment.tsx
+│   │   ├── About.tsx
+│   │   ├── Achievements.tsx
+│   │   ├── Blog.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Experience.tsx
+│   │   ├── FloatingSocial.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Services.tsx
+│   │   ├── Skills.tsx
+│   │   └── Testimonials.tsx
+│   ├── data
+│   │   └── portfolio.ts
+│   ├── hooks
+│   │   ├── useScrollAnimation.ts
+│   │   └── useTheme.ts
+│   ├── index.css
+│   ├── main.tsx
+│   ├── types
+│   │   └── index.ts
+│   └── vite-env.d.ts
 ├── tailwind.config.js
-├── vite.config.ts
-└── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
 ```
 
 ---
