@@ -2,7 +2,7 @@
 
 A modern, interactive, and glassmorphic developer portfolio website. Built with **React.js** and **Tailwind CSS**, it showcases your work, skills, and online presence with a sleek design and smooth animations.
 
-![Website Screenshot](https://liquid-glass-portfolio.netlify.app/screenshot.png) <!-- Replace with actual screenshot if available -->
+![Website Screenshot](Screenshot.png) <!-- Replace with actual screenshot if available -->
 
 ## 🚀 Live Demo
 
