@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Enhanced scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #14b8a6);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #0d9488);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #60a5fa, #2dd4bf);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #3b82f6, #14b8a6);
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Enhanced Glass morphism utility classes */
+.glass-light {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Light mode enhanced glass effects */
+.bg-white\/30 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-white\/40 {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bg-white\/50 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.border-white\/50 {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.border-white\/60 {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Dark mode enhanced glass effects */
+.dark .bg-slate-900\/30 {
+  background-color: rgba(15, 23, 42, 0.3);
+}
+
+.dark .bg-slate-800\/40 {
+  background-color: rgba(30, 41, 59, 0.4);
+}
+
+.dark .bg-slate-800\/50 {
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+.dark .border-slate-700\/50 {
+  border-color: rgba(51, 65, 85, 0.5);
+}
+
+.dark .border-slate-700\/60 {
+  border-color: rgba(51, 65, 85, 0.6);
+}
+
+/* Enhanced backdrop blur */
+.backdrop-blur-3xl {
+  backdrop-filter: blur(40px);
+}
+
+/* Enhanced focus states */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection colors */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: inherit;
+}
+
+.dark ::selection {
+  background: rgba(59, 130, 246, 0.5);
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.6); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Improved text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Loading state */
+.loading {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.loaded {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Enhanced glass effect shadows */
+.shadow-glass-light {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.shadow-glass-dark {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hover\:shadow-glass-light:hover {
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+}
+
+.dark .hover\:shadow-glass-dark:hover {
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* Better contrast for dark mode text */
+.dark .text-slate-300 {
+  color: rgb(203 213 225);
+}
+
+.dark .text-slate-400 {
+  color: rgb(148 163 184);
+}
+
+.dark .text-slate-500 {
+  color: rgb(100 116 139);
+}
+
+/* Improved button hover states */
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Enhanced shadow for dark mode */
+.dark .shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.dark .shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.dark .shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass morphism hover effects */
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.dark .glass-hover:hover {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(51, 65, 85, 0.6);
+}
+
+/* Enhanced backdrop filters */
+.backdrop-blur-2xl {
+  backdrop-filter: blur(24px);
+}
+
+.backdrop-blur-3xl {
+  backdrop-filter: blur(40px);
+}
+
+/* Responsive glass effects */
+@media (max-width: 640px) {
+  .backdrop-blur-3xl {
+    backdrop-filter: blur(20px);
+  }
+  
+  .backdrop-blur-2xl {
+    backdrop-filter: blur(16px);
+  }
+}
+
+/* Custom shadow utilities */
+.shadow-glass {
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.2);
+}
+
+.dark .shadow-glass {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.shadow-glass-lg {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.dark .shadow-glass-lg {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
